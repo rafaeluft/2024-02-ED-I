@@ -13,6 +13,9 @@ int main(){
     //Espera-se aqui que se eu imprimir o umPonto,
     //A coordenada x valera 1.8;
     Ponto* py = Ponto_create(2.0, 8.0);
+    float py_x;
+    Ponto_get_x(py, &py_x);
+    printf("x local: %f\n", py_x);
     printf("Distancia: %f\n", Ponto_dist(umPonto, py));
     return 0;
 }
