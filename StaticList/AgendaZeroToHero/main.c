@@ -19,7 +19,7 @@ int main(){
         switch(op){
             case 1:
                 temp =  Contato_ui_novo();
-                puts(SList_insert_end(list, temp) ? "Sucesso" : "Agenda cheia!");
+                puts(SList_insert_end(list, temp) ? "Cadastrado com sucesso!" : "Agenda cheia!");
                 break;
             case 2: 
                 SList_print(list);
