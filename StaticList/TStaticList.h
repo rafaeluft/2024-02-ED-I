@@ -13,7 +13,7 @@ TStaticList* SList_create();
  * @param TStaticList* list
  * @param int valor inteiro a ser inserido na lista
  */
-bool SList_insert_begin(TStaticList*, int);
+bool SList_insert_end(TStaticList*, int);
 /**
  * Imprime a lista estática
  * @param TStaticList* list
