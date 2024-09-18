@@ -5,9 +5,10 @@
 typedef struct _list TStaticList;
 /**
  * Cria instâncias de uma lista estática
+ * @param unsigned int Tamanho desejado para a lista
  * @return TStaticList*
  */
-TStaticList* SList_create();
+TStaticList* SList_create(unsigned int);
 /**
  * Faz a inserção de um elemento no fim da lista.
  * @param TStaticList* list
