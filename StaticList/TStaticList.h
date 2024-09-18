@@ -9,7 +9,7 @@ typedef struct _list TStaticList;
  */
 TStaticList* SList_create();
 /**
- * Faz a inserção de um elemento no início da lista.
+ * Faz a inserção de um elemento no fim da lista.
  * @param TStaticList* list
  * @param int valor inteiro a ser inserido na lista
  * @return boolean informando se a operação foi sucesso
