@@ -20,7 +20,6 @@ TStaticList* SList_create(unsigned int size) {
     }
     return list;
 }
-
 bool SList_insert_end(TStaticList* list, int info){
     //Checar se tem espaço
     if(SList_is_full(list))
@@ -29,6 +28,11 @@ bool SList_insert_end(TStaticList* list, int info){
     list->qty++;
     return true;
 }
+
+bool SList_insert_begin(TStaticList* list, int info){
+    
+}
+
 
 bool SList_is_full(TStaticList* list){
     return list->qty == list->MAX;
