@@ -20,22 +20,10 @@ TStaticList* SList_create(unsigned int size) {
     }
     return list;
 }
-bool SList_insert_end(TStaticList* list, int info){
-    //Checar se tem espaço
+bool SList_insert(TStaticList* list, int info){
     if(SList_is_full(list))
         return false;
-    list->data[list->qty] = info;
-    list->qty++;
-    return true;
-}
-
-bool SList_insert_begin(TStaticList* list, int info){
-    if(SList_is_full(list))
-        return false;
-    for(unsigned int i=list->qty; i>0; i--)
-        list->data[i] = list->data[i-1];
-    list->data[0] = info;
-    list->qty++;
+    //todo: Implementar a inserção de maneira ordenada crescente
     return true;
 
 }
