@@ -11,8 +11,8 @@ Contato Contato_ui_novo(){
     Contato c;
     static unsigned int id = 1;
     printf("Digite os dados de um novo Contato: ");
-    printf("Nome: ");
-    scanf("%d",c.nome);
+    printf("\nNome: ");
+    scanf("%s",c.nome);
     printf("Telefone: ");
     scanf("%s", c.telefone);
     c.id = id++;

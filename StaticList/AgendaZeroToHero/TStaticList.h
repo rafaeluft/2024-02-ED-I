@@ -14,10 +14,10 @@ TStaticList* SList_create(unsigned int);
 /**
  * Faz a inserção de um elemento no fim da lista.
  * @param TStaticList* list
- * @param int valor inteiro a ser inserido na lista
+ * @param Contato contato a ser armazenado na lista
  * @return boolean informando se a operação foi sucesso
  */
-bool SList_insert_end(TStaticList*, int);
+bool SList_insert_end(TStaticList*, Contato);
 /**
  * Imprime a lista estática
  * @param TStaticList* list

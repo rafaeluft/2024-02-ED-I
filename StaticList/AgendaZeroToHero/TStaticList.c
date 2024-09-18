@@ -36,6 +36,7 @@ bool SList_is_full(TStaticList* list){
 
 
 void SList_print(TStaticList* list){
+    puts("--------------------------");
     for(unsigned int i=0; i<list->qty; i++)
         Contato_print(list->data[i]);
     putchar('\n');
