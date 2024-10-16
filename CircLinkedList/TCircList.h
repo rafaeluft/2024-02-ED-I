@@ -6,9 +6,13 @@ typedef struct tcirc_list TCircList;
 
 TCircList* TCircList_create();
 /**
- * Insere um elemento inteiro na lista circular
+ * Insere um elemento inteiro no inicio lista circular
  */
-bool TCircList_insert(TCircList*, int);
+bool TCircList_insert_begin(TCircList*, int);
+/**
+ * Insere um elemento inteiro no final da lista circular.
+ */
+bool TCircList_insert_end(TCircList*, int);
 /**
  * Imprime a lista circular
  */

@@ -27,7 +27,7 @@ TCircList* TCircList_create(){
 /**
  * Insere um elemento inteiro na lista circular
  */
-bool TCircList_insert(TCircList* list, int info){
+bool TCircList_insert_begin(TCircList* list, int info){
     TNo* novo = TNo_createNFill(info);
     if(novo == NULL) return false;
 
@@ -47,6 +47,30 @@ bool TCircList_insert(TCircList* list, int info){
         novo->prox = list->inicio;
         //6) Início passa a apontar para o novo nó;
         list->inicio = novo;
+    }
+    return true;
+}
+/**
+ * Insere um elemento inteiro na lista circular
+ */
+bool TCircList_insert_end(TCircList* list, int info){
+    TNo* novo = TNo_createNFill(info);
+    if(novo == NULL) return false;
+
+    if(list->inicio == NULL){
+        //estamos lidando com uma lista vazia..
+        novo->prox = novo;
+        list->inicio = novo;
+    }else{
+        //Oh no, oh no, oh nononono
+        //3) Percorrer a lista, e achar o último elemento.
+        TNo* aux = list->inicio;
+        while(aux->prox != list->inicio)
+            aux = aux->prox;
+        //4) Último elemento passa a apontar para o novo nó; 
+        aux->prox = novo;
+        //5) Próximo de novo deve apontar para o início;
+        novo->prox = list->inicio;
     }
     return true;
 }
