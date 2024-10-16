@@ -13,5 +13,4 @@ bool TCircList_insert(TCircList*, int);
  * Imprime a lista circular
  */
 void TCircList_print(TCircList*);
-
 #endif
