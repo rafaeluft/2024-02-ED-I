@@ -1,0 +1,3 @@
+/Users/rafaellima/Code/2024-02-ED-I/LinkedList/InsertBegin/cmake-build-debug/CMakeFiles/InsertBegin.dir
+/Users/rafaellima/Code/2024-02-ED-I/LinkedList/InsertBegin/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/rafaellima/Code/2024-02-ED-I/LinkedList/InsertBegin/cmake-build-debug/CMakeFiles/rebuild_cache.dir
