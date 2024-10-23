@@ -1,6 +1,7 @@
 #ifndef TDLINKED_LIST
 #define TDLINKED_LIST
 #include <stdbool.h>
+
 typedef struct _list TDLinkedList;
 
 TDLinkedList* TDLinkedList_create();
